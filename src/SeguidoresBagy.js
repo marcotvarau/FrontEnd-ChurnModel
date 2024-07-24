@@ -27,6 +27,7 @@ const SeguidoresBagy = () => {
             <th>URL</th>
             <th>Data de Registro</th>
             <th>Usuário Novo</th>
+            <th>Link da Bio</th>
           </tr>
         </thead>
         <tbody>
@@ -36,6 +37,7 @@ const SeguidoresBagy = () => {
               <td><a href={follower.user_url} target="_blank" rel="noopener noreferrer">{follower.user_url}</a></td>
               <td>{follower.register_date}</td>
               <td>{follower.is_new_user ? 'Sim' : 'Não'}</td>
+              <td><a href={follower.bio_link} target="_blank" rel="noopener noreferrer">{follower.bio_link}</a></td>
             </tr>
           ))}
         </tbody>
